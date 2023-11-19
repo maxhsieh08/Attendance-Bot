@@ -5,6 +5,6 @@ module.exports = {
     .setName("alert")
     .setDescription("pings projects role"),
   async execute(interaction) {
-    await interaction.reply("<@&1175178345466581192>");
+    await interaction.reply("<@&1175178345466581192> sugg it 8======D");
   },
 };
