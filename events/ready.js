@@ -6,9 +6,13 @@ module.exports = {
   once: true,
   execute(client) {
     console.log(`Ready! Logged in as ${client.user.tag}`);
+    schedule.scheduleJob("alert", "0 6 * * *", () => {
+      const channel = client.channels.cache.get("1175256511468011630");
+      channel.send("<@&1175178345466581192> project time");
+    });
     schedule.scheduleJob("alert", "0 8 * * *", () => {
       const channel = client.channels.cache.get("1175256511468011630");
-      channel.send("<@&1175178345466581192> sup");
+      channel.send("<@&1175178345466581192> one more hour to check in");
     });
   },
 };

@@ -1,3 +1,16 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "409830853389189144",
+      "checkInCount": 1,
+      "checkInStreak": 1,
+      "lastClockIn": "2023-11-19T02:50:30.845Z"
+    },
+    {
+      "id": "563257337595559976",
+      "checkInCount": 1,
+      "checkInStreak": 1,
+      "lastClockIn": "2023-11-19T02:57:25.339Z"
+    }
+  ]
 }
