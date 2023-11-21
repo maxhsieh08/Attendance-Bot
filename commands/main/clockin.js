@@ -31,6 +31,7 @@ module.exports = {
         users.users[index].checkInCount += 1;
         users.users[index].checkInStreak += 1;
         users.users[index].lastClockIn = currentTime.toISOString();
+        users.users[index].missedDaysStreak = 0;
       }
     } else if (isWithinTimeRange) {
       // New user clocking in for the first time and current time is within 6 AM to 9 AM
@@ -39,6 +40,7 @@ module.exports = {
         checkInCount: 1,
         checkInStreak: 1,
         lastClockIn: currentTime.toISOString(),
+        missedDaysStreak: 0,
       });
       canClockIn = true;
     }

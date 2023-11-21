@@ -3,26 +3,30 @@
     {
       "id": "409830853389189144",
       "checkInCount": 0,
-      "checkInStreak": 45,
-      "lastClockIn": "2023-11-20T07:13:12.981Z"
+      "checkInStreak": 0,
+      "lastClockIn": "2023-11-21T06:32:36.487Z",
+      "missedDaysStreak": 0
     },
     {
-      "id": "563257337595559976",
-      "checkInCount": 27,
+      "id": "235540306374688768",
+      "checkInCount": 0,
+      "checkInStreak": 0,
+      "lastClockIn": "2023-11-21T06:32:54.669Z",
+      "missedDaysStreak": 0
+    },
+    {
+      "id": "239656718076739585",
+      "checkInCount": 1,
       "checkInStreak": 1,
-      "lastClockIn": "2023-11-20T16:39:15.354Z"
+      "lastClockIn": "2023-11-21T06:56:10.817Z",
+      "missedDaysStreak": 0
     },
     {
       "id": "258021698941485057",
-      "checkInCount": 83,
-      "checkInStreak": 1,
-      "lastClockIn": "2023-11-20T16:39:15.354Z"
-    },
-    {
-      "id": "729932679176257538",
       "checkInCount": 1,
       "checkInStreak": 1,
-      "lastClockIn": "2023-11-20T16:39:15.354Z"
+      "lastClockIn": "2023-11-21T06:56:39.951Z",
+      "missedDaysStreak": 0
     }
   ]
 }

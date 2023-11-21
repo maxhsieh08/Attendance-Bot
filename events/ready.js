@@ -8,7 +8,6 @@ module.exports = {
   execute(client) {
     console.log(`Ready! Logged in as ${client.user.tag}`);
     const channel = client.channels.cache.get("1175256511468011630");
-
     schedule.scheduleJob("alert", "0 6 * * *", () => {
       channel.send("<@&1175178345466581192> project time");
       const rawData = fs.readFileSync("userData.json");
@@ -18,6 +17,12 @@ module.exports = {
         const date = new Date(streak.lastClockIn).getDate();
         if (date !== currentDay.getDate() - 1) {
           streak.checkInStreak = 0;
+          streak.missedDaysStreak += 1;
+          if (streak.missedDaysStreak >= 3) {
+            channel.guild.members.cache
+              .get(streak.id)
+              .setNickname(`${streak.missedDaysStreak} days no project`);
+          }
         }
       }
       fs.writeFileSync("userData.json", JSON.stringify(users, null, 2));
