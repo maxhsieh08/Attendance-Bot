@@ -1,3 +1,28 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "409830853389189144",
+      "checkInCount": 0,
+      "checkInStreak": 45,
+      "lastClockIn": "2023-11-20T07:13:12.981Z"
+    },
+    {
+      "id": "563257337595559976",
+      "checkInCount": 27,
+      "checkInStreak": 1,
+      "lastClockIn": "2023-11-20T16:39:15.354Z"
+    },
+    {
+      "id": "258021698941485057",
+      "checkInCount": 83,
+      "checkInStreak": 1,
+      "lastClockIn": "2023-11-20T16:39:15.354Z"
+    },
+    {
+      "id": "729932679176257538",
+      "checkInCount": 1,
+      "checkInStreak": 1,
+      "lastClockIn": "2023-11-20T16:39:15.354Z"
+    }
+  ]
 }

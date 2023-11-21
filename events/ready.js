@@ -10,7 +10,7 @@ module.exports = {
     const channel = client.channels.cache.get("1175256511468011630");
 
     schedule.scheduleJob("alert", "0 6 * * *", () => {
-      channel.send("project time");
+      channel.send("<@&1175178345466581192> project time");
       const rawData = fs.readFileSync("userData.json");
       const users = JSON.parse(rawData);
       const currentDay = new Date();
