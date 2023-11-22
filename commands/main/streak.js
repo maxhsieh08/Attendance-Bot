@@ -9,13 +9,12 @@ module.exports = {
     const rawData = fs.readFileSync("userData.json");
     const users = JSON.parse(rawData);
     const index = users.users.findIndex((u) => u.id === interaction.user.id);
-    if (index !== -1 && users.users[index].checkInStreak === 1) {
+    const streak = users.users[index].checkInStreak;
+    if (index !== -1) {
       await interaction.reply(
-        `you have a clock in streak of ${users.users[index].checkInStreak} day`
-      );
-    } else if (index !== -1) {
-      await interaction.reply(
-        `you have a clock in streak of ${users.users[index].checkInStreak} days`
+        `you have a clock in streak of ${streak} ${
+          streak === 1 ? "day" : "days"
+        }`
       );
     } else {
       await interaction.reply(`no data found.`);

@@ -12,7 +12,7 @@ module.exports = {
       .slice()
       .sort((a, b) => b.checkInCount - a.checkInCount);
     const leaderboardStr = sortedUsers.map((user, index) => {
-      return `${index + 1}: <@${user.id}> - ${user.checkInCount} check-${
+      return `${index + 1}: <@${user.id}> - ${user.checkInCount} clock-${
         user.checkInCount === 1 ? "in" : "ins"
       }`;
     });

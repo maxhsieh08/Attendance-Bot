@@ -2,9 +2,9 @@
   "users": [
     {
       "id": "409830853389189144",
-      "checkInCount": 0,
+      "checkInCount": 1,
       "checkInStreak": 0,
-      "lastClockIn": "2023-11-21T06:32:36.487Z",
+      "lastClockIn": "2023-11-21T15:01:40.284Z",
       "missedDaysStreak": 0
     },
     {
@@ -16,16 +16,44 @@
     },
     {
       "id": "239656718076739585",
-      "checkInCount": 1,
-      "checkInStreak": 1,
+      "checkInCount": 0,
+      "checkInStreak": 0,
       "lastClockIn": "2023-11-21T06:56:10.817Z",
       "missedDaysStreak": 0
     },
     {
       "id": "258021698941485057",
-      "checkInCount": 1,
-      "checkInStreak": 1,
+      "checkInCount": 0,
+      "checkInStreak": 0,
       "lastClockIn": "2023-11-21T06:56:39.951Z",
+      "missedDaysStreak": 0
+    },
+    {
+      "id": "729932679176257538",
+      "checkInCount": 1,
+      "checkInStreak": 0,
+      "lastClockIn": "2023-11-21T14:00:19.403Z",
+      "missedDaysStreak": 0
+    },
+    {
+      "id": "563257337595559976",
+      "checkInCount": 1,
+      "checkInStreak": 0,
+      "lastClockIn": "2023-11-21T15:56:31.010Z",
+      "missedDaysStreak": 0
+    },
+    {
+      "id": "627950770402099213",
+      "checkInCount": 1,
+      "checkInStreak": 0,
+      "lastClockIn": "2023-11-21T16:32:22.461Z",
+      "missedDaysStreak": 0
+    },
+    {
+      "id": "182290144252919808",
+      "checkInCount": 0,
+      "checkInStreak": 0,
+      "lastClockIn": "2023-11-21T16:32:22.461Z",
       "missedDaysStreak": 0
     }
   ]

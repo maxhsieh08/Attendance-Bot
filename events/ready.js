@@ -18,11 +18,13 @@ module.exports = {
         if (date !== currentDay.getDate() - 1) {
           streak.checkInStreak = 0;
           streak.missedDaysStreak += 1;
-          if (streak.missedDaysStreak >= 3) {
-            channel.guild.members.cache
-              .get(streak.id)
-              .setNickname(`${streak.missedDaysStreak} days no project`);
-          }
+          // if (
+          //   streak.missedDaysStreak >= 3
+          // ) {
+          //   channel.guild.members.cache
+          //     .get(streak.id)
+          //     .setNickname(`${streak.missedDaysStreak} days no project`);
+          // }
         }
       }
       fs.writeFileSync("userData.json", JSON.stringify(users, null, 2));
