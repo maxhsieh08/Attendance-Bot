@@ -12,10 +12,11 @@ module.exports = {
       channel.send("<@&1175178345466581192> project time");
       const rawData = fs.readFileSync("userData.json");
       const users = JSON.parse(rawData);
-      const currentDay = new Date();
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
       for (const streak of users.users) {
         const date = new Date(streak.lastClockIn).getDate();
-        if (date !== currentDay.getDate() - 1) {
+        if (date !== yesterday.getDate()) {
           streak.checkInStreak = 0;
           streak.missedDaysStreak += 1;
         }
