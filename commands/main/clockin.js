@@ -9,13 +9,11 @@ module.exports = {
     const rawData = fs.readFileSync("userData.json");
     const users = JSON.parse(rawData);
     const index = users.users.findIndex((u) => u.id === interaction.user.id);
-    const currentTime = new Date();
-
-    // Calculate today's 6 AM
-    const today6AM = new Date();
+    const currentTime = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" });
+    currentTime = new Date(currentTime);
+    const today6AM = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+    today6AM = new Date(today6AM);
     today6AM.setHours(6, 0, 0, 0);
-
-    // Check if the current time is between 6 AM and 9 AM
     const isWithinTimeRange =
       currentTime.getHours() >= 6 && currentTime.getHours() < 9;
 
