@@ -34,7 +34,7 @@ module.exports = {
     pingEnd.minute = 0;
     pingEnd.hour = 9;
     schedule.scheduleJob(pingEnd, () => {
-      channel.send("<@&1175178345466581192> check-ins closed for todasy");
+      channel.send("<@&1175178345466581192> check-ins closed for today");
     });
   },
 };
