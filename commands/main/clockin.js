@@ -9,7 +9,7 @@ module.exports = {
     const rawData = fs.readFileSync("userData.json");
     const users = JSON.parse(rawData);
     const index = users.users.findIndex((u) => u.id === interaction.user.id);
-    const currentTime = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" });
+    let currentTime = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" });
     currentTime = new Date(currentTime);
     const today6AM = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
     today6AM = new Date(today6AM);
