@@ -5,6 +5,7 @@ const { Client, Collection, GatewayIntentBits } = require("discord.js");
 const botToken = process.env.BOT_TOKEN;
 // Import the functions you need from the SDKs you need
 // const { initializeApp } = require("firebase/app");
+// const { getDatabase, ref, set } = require("firebase/database");
 
 // // Your web app's Firebase configuration
 // // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -20,6 +21,8 @@ const botToken = process.env.BOT_TOKEN;
 
 // // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
+// const db = getDatabase();
+// const reference = ref(db, 'users/' + userId);
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds],
