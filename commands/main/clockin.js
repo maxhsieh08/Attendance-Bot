@@ -9,12 +9,6 @@ module.exports = {
     const rawData = fs.readFileSync("userData.json");
     const users = JSON.parse(rawData);
     const index = users.users.findIndex((u) => u.id === interaction.user.id);
-    // let currentTime = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" });
-    // currentTime = new Date(currentTime);
-    // let today6AM = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-    // today6AM = new Date(today6AM);
-    // today6AM.setHours(6, 0, 0, 0);
-    // Create a date object for today
     const today6AM = new Date();
 
     // Set time to 6 AM in UTC
@@ -36,7 +30,6 @@ module.exports = {
     const currentTime = now.toLocaleString("en-US", {
       timeZone: "America/Los_Angeles",
     });
-
     const isWithinTimeRange =
       currentTime.getHours() >= 6 && currentTime.getHours() < 9;
 
