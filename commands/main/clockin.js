@@ -17,9 +17,6 @@ module.exports = {
     // Calculate the time zone offset for Los Angeles in milliseconds
     // PST is UTC-8 and PDT is UTC-7
     let losAngelesOffset = today6AM.getTimezoneOffset() + 480;
-    if (today6AM.dst()) {
-      losAngelesOffset -= 60;
-    }
 
     // Adjust the date object to Los Angeles time
     today6AM.setMinutes(today6AM.getMinutes() - losAngelesOffset);
