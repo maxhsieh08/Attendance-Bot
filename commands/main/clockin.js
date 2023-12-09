@@ -17,24 +17,25 @@ module.exports = {
     // Calculate the time zone offset for Los Angeles in milliseconds
     // PST is UTC-8 and PDT is UTC-7
     let losAngelesOffset = today6AM.getTimezoneOffset() + 480;
-    if (today6AM.dst()) {
-      losAngelesOffset -= 60;
-    }
 
     // Adjust the date object to Los Angeles time
     today6AM.setMinutes(today6AM.getMinutes() - losAngelesOffset);
+
     // Create a new Date object for the current time
     const now = new Date();
 
-    // Convert the current time to Los Angeles time
-    const currentTime = now.toLocaleString("en-US", {
+    // Convert the current time to a string in Los Angeles time
+    const currentTimeString = now.toLocaleString("en-US", {
       timeZone: "America/Los_Angeles",
     });
+
+    // Convert the string back to a Date object
+    const currentTime = new Date(currentTimeString);
+
     const isWithinTimeRange =
       currentTime.getHours() >= 6 && currentTime.getHours() < 9;
 
     let canClockIn = false;
-
     let lastClockInTime;
     if (index !== -1) {
       lastClockInTime = new Date(users.users[index].lastClockIn);
